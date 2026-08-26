@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="fragments/header">
+
+</head>
+<body>
+
+   <nav th:insert="fragments/nav">
+
+   </nav>
+
+    <div class="container">
+
+        <div class="row m3">
+            <h2 class="center-align">Welcome to DataParser (Working with CSV files)</h2>
+        </div>
+
+        <div class="row">
+            <h4 class="center-align">File handling is an important aspect of any software engineering process.</h4>
+        </div>
+
+
+        <div class="row">
+
+            <p>You can download the sample files for this lab from the links below: </p>
+
+            <ul class="collection with-header">
+                <li class="collection-header"><h6>DOWNLOAD LINKS</h6></li>
+
+                <li class="collection-item">
+                    <div>CSV
+                        <a th:href="@{${download_url}}" target="_blank" class="secondary-content">
+                            <i class="material-icons">download</i>
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="row" style="margin-top: 5%;">
+            <h4>Click on the links at the top menu to see the different file types functionalities.</h4>
+        </div>
+
+        <div class="row" style="margin-top: .5%;">
+            <h6>Alternatively you can use the link below:</h6>
+        </div>
+
+        <div class="row">
+            <a th:href="@{/data/csv}" class="btn green darken-3">OPEN CSV PAGE</a>
+        </div>
+
+        <div class="row" style="margin-top: .5%">
+            <h3 style="color: darkred;">NB: There is a <i><strong>test</strong></i> folder accompanied by this lab. Ensure all your tests pass as you code along.</h3>
+        </div>
+
+    </div>
+
+    <footer th:insert="fragments/footer">
+
+    </footer>
+    </body>
+</html>
